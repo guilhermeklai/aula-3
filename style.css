@@ -1,0 +1,100 @@
+/* body{
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: fantasy;
+}
+.text{
+    border: 1px solid black;
+    height: 100%;
+    margin: 5%;
+    width: 90%;
+    background-color: aquamarine;
+
+}
+p{
+    text-align: center;
+    padding: 1%;
+    font-size: 100px;
+}
+.banner {
+    background-image: url(https://cdn-ofuxico.akamaized.net/img/upload/noticias/2018/12/02/faustao_383730_336235_36.jpg);
+    height: 50vw;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#login{
+    border: solid 2px purple;
+    padding: 10px;
+    color: purple;
+
+} */
+body{
+    margin: 0px;
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(4, auto) ;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "main main . ."
+        "footer footer footer footer"
+}
+
+main{
+    background-color: aquamarine;
+    grid-area: main;
+}
+
+.sidebar{
+    background-color: antiquewhite;
+    grid-area: sidebar;
+}
+
+footer{
+    background-color: red;
+    grid-area: footer;
+}
+
+header{
+    align-items: center;
+    background-color: blueviolet;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+h3{
+    padding: 0 10px;
+    color: blanchedalmond;
+}
+footer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
